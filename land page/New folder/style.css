@@ -1,0 +1,281 @@
+body {
+    color: #ededed;
+    background: #081b29;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo-image {
+    width: 100px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+.btn-box {
+    padding: 12px 26px;
+    background: #0ef;
+    border-radius: 15px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-box:hover {
+    background: cyan;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('home-image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 70px 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.container {
+    padding: 90px;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div:hover {
+    transform: translateY(-10px);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #081b29;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent; /* Make the box colorless */
+}
+
+.about-box h2, .about-box h3, .about-box h4 {
+    color: wheat;
+}
+
+.about-box p {
+    color:white;
+}
+
+.about h2 span {
+    color: #ff6347; /* Change this to match your theme color */
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .about-img, .about-box {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .about-img {
+        margin-right: 20px;
+    }
+
+    .about-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .about-img, .about-box {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .about-img {
+        margin-right: 20px;
+    }
+
+    .about-box {
+        margin-bottom: 20px;
+    }
+}
+
+
+.testimonial {
+    margin-bottom: 50px;
+}
+
+.testimonial p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact {
+    padding: 90px;
+    background: #081b29;
+}
+
+.contact-text h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.contact-list {
+    margin: 30px 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-list i {
+    margin-right: 10px;
+    color: #0ef;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 18px;
+    background: #555557;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form form .send {
+    padding: 14px 60px;
+    background: #0ef;
+    border-radius: 40px;
+    color: #081b29;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-form form .send:hover {
+    background: cyan;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #051129;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.footer .social-icons a {
+    color: #0ef;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
